@@ -79,6 +79,7 @@ $(document).ready(function () {
         var selector = '#menu-item-' + item.id;
         var total = 0;
 
+        
         (function (item) {
             $(selector).click(() => {
                 var foodItemInfToCart = function (item) {

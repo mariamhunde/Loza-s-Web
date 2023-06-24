@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Loza Market</title>
+    <title>Loza's Menu</title>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,72 +13,97 @@
 </head>
 
 <body>
-    <nav class=" navbar navbar-expand-sm bg-dark my-2 ">
+    <div id="top-bar">
+    </div>
+    
+    <nav class=" navbar navbar-expand-sm bg-dark my-2 py-5 ">
+  
+      <div class="container-fluid">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link text-light navbutton " href="./main.html" aria-current="page">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light navbutton" href="./About.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light navbutton active" href="./hm.html">MENU</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light navbutton" href="./catering.html">CATERING</a>
+             </li>
+                  
+          </ul>
+      </div>
+  
+  </nav>
 
-        <div class="container-fluid">
-            <!-- Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-light navbutton active" href="#" aria-current="page">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light navbutton" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light navbutton" href="#">CONTACT</a>
-                </li>
-                <li>
-                    <a class="btn btn-dark btn-nav cartBtn "><span class="bi bi-cart white-color"></span> CART</a>
-                    <!---->
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
+    
     <div class="container">
         <div class="d-flex justify-content-center textFont ">
-            <h1 class=" firstHeader header-text mb-2">Loza's Ethiopian Cuisine</h1>
+            <h1 class=" loza-main-header header-text mb-2">Loza's Ethiopian Cuisine</h1>
         </div>
 
-        <div class="row d-flex justify-content-center mt-1" id="menu">
+        <div id="menu" class="row d-flex justify-content-center mt-1" >
 
         </div>
-
 
 
 
 
     </div>
-    <div class=" container col-4 col-sm-1 bottom-cart ">
 
-        <h3 class="cart-header textFont text-center font-weight-light">Shopping Cart</h3>
+    <div class="divider mt-5 mb-5"></div>
+   
+    <div class=" bottom-cart container mt-5 col-4 col-sm-1  ">
+        <div class="pt-2 pb-2 cart-header textFont text-center font-weight-light">
+            <h2 >Shopping Cart</h2>
+         </div>
         <hr>
 
-
-        <div class="row align-items-center">
-
-            <div class="col float" id="cart-img-div">
-
-               
-
+        <div class="row align-items-start">
+            <div class="col" id="cart-rows-div">
+              <!-- Cart item rows will be appended here -->
             </div>
-            <div id="total">
-                <h5 class="textFont ">Total: $<span id="total-amount">0.00</span></h5>
-            </div>
+          </div>
+        
+           <!-- need javascript to make total pop up once item is added instead of it already being there -->
+          <div class="row total-display text-end justify-content-end">
+              <h5 id="totalbox" class="textFont">Total: $<span id="total-amount">0.00</span></h5>
+            
+          </div>
         </div>
+       <!-----Footer-->
+       <footer class="py-3 my-4 text-white bg-dark mt-5 h-25">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./main.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="./About.html" class="nav-link px-2 text-muted">About Us</a></li>
+          <li class="nav-item"><a href="./hm.html" class="nav-link px-2 text-muted">Menu</a></li>
+          <li class="nav-item"><a href="./catering.html" class="nav-link px-2 text-muted">Catering</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2023 Loza's Ethiopian Cuisine | 10 South Jordan St Alexandria, VA | P.703.751.0104 </p>
+      </footer>
+        
 
+       
 
-
-
-    </div>
-
-
-
-    <script src="hm.js"></script>
+    <script src="./jsfiles/hm.js"></script>
 </body>
 
 </html>
 
+<!--
+<div id="checkout-cart-item-row' + item.id + '" class="col cart-item">
+    <img src="' + item.picture + '" class="cart-img img-fluid imgSize">
+    <span id="cart-item-title">' + item.title + '</span>'
+    <span id="quantity-btns">
+        <button id="minus-btn' + item.id + class=" minus-btn">-</button>
+        <input type="text" class="cart-input text-center" id="cart-input-textbox' + item.id + '" value="0">'
+        <button class="plus-btn" id="plus-quantity-btn' + item.id + '"> </button></span>
+    <span id="food-tem-price">+
+        + item.price + '
+        <button id="cls-bttn' + item.id + '" class=cls-bttn w-bolder">X</button> </span>);
 
+
+    

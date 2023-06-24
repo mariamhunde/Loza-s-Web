@@ -2,13 +2,13 @@
     height: 35%;
 }
 .card{
-    width: 21em;
-    height: 30em;
+    width: 19em;
+    height: 24em;
     min-height: 27em;
     max-height: 27em;
 }
 body{
-    background-color: #e6dbc9;
+    background-color: #e8e6e3;
 }
 .add-to-cart{
     background-color: black;
@@ -43,19 +43,7 @@ a:hover.navbutton{
     background-color: #e6dbc9;
     color: black;
 }
-.text-right{
 
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    }
-    
- 
-    
-.black-color{
-    color:black;
-}
 .buttonalign{
      position: fixed;
      right: 10%;

@@ -1,0 +1,47 @@
+html{
+  height:1000px;
+}
+body{
+  background-color: #f1efec;
+   
+    
+}
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.story-font p{
+    overflow: hidden;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+
+}
+#top-bar{
+  height:110px;
+  background-color: #f1efec;
+}
+.divider{
+  margin-top: 10%;
+  
+}
+.img-container {
+    float: left; /* Float the image to the left */
+    padding-left: 100px;
+  }
+  
+  .story-content {
+    margin-left: 330px; /* Adjust the margin based on the image width */
+    margin-right: 4em;
+    
+  }
+  img{
+    width:400px;
+    height: 375px;
+    max-width: none;
+    object-fit: cover;
+    position: relative;
+    right: 40px;
+    top:20px;
+  }

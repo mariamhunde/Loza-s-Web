@@ -15,12 +15,17 @@ var items = [{ id: 1, title: 'Loza Tibs', price: '$14.99', description: 'Tender 
 
 $(document).ready(function () {
     /// ADD MENU CARDS
+    $('#container').animate({ opacity: 1 }, 500); // need page load transitoin
+
     function appendCards(items) {
         console.log('appendCards function is called');
 
         for (var i = 0; i < items.length; i++) {
             var item = items[i];
+               //  $('#menu').delay("slow").fadeIn();    
+
             $('#menu').append(
+
                 '<div class="card cards  col-3 col-sm-1 mx-3 my-3 h-100">' +
                 '<img src="' + item.picture + '" class="card-img-top imgfit img-fluid" alt="...">' +
                 '<div class="card-body text-center">' +
@@ -84,8 +89,9 @@ $(document).ready(function () {
                 var previousVal = $(quantityInputTextBox).val();
 
              /// Bottom card appear
-                $('.bottom-cart').show();
-                
+               // $('.bottom-cart').show();
+                $('.bottom-cart').delay("slow").fadeIn();    
+
                 function foodItemInfToCart(item) {
                     var itemAlreadyInCart = false;
                     var cartItem = '.cart-item';

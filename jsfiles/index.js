@@ -1,9 +1,6 @@
 $(document).ready(function () {
 
 
-$(".btn").click(function(){
-    console.log("We Work!");
-})
     $(".btn").mouseover(function(){
     $(this).css({
         'transform': 'scale(1.1)',

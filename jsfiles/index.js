@@ -11,7 +11,7 @@ $(".btn").click(function(){
     });
 });
 
-$('.cards').mouseout(function() {
+$('.btn').mouseout(function() {
     $(this).css({
       'transform': 'scale(1)',
       'transition': 'transform 0.2s ease-in-out'

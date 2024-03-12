@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $("#header").animate({ top: 10 }, 1000); 
+  $("h1").css("position", "relative").animate({ top: "-=10", opacity: 0 }, 1000);
 
     $(".btn").mouseover(function(){
     $(this).css({

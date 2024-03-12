@@ -51,17 +51,7 @@ h1 {
     margin-top: 10%;
     
 }
-.header {
-  position: fixed;
-  top: -100px; 
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  transition: top 0.5s ease;
-}
+
 
 .header-btns{
     margin-top: 20px;

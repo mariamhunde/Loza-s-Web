@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  $("#header").animate({ top: 10 }, 1000); 
 
     $(".btn").mouseover(function(){
     $(this).css({

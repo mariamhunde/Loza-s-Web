@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-  $("h1").css({ position: "relative", top: "-10px", opacity: 0 }) // Start with the element hidden
-  .animate({ top: 0, opacity: 1 }, 1000); // Animate it to move down and fade in gradually over 1 second
+  $("h1").css({ position: "relative", top: "-10px", opacity: 0 }) 
+  .animate({ top: 0, opacity: 1 }, 1000);
 
     $(".btn").mouseover(function(){
     $(this).css({
